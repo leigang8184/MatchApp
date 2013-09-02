@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<color name="black">#000000</color>
+	<color name="white">#FFFFFF</color>
+	<color name="bg_color">#272727</color>
+	<color name="list_light">#FFD700</color>
+	<color name="footbar_bg_color">#c3c9be</color>
+	<color name="color_pressed">#ff60a917</color>
+    
+</resources>

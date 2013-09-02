@@ -1,0 +1,159 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginRight="5dp"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/mainmetro_one"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginBottom="5dp"
+            android:layout_weight="1"
+            android:background="#ee5871" >
+            
+                <ImageView
+			        android:id="@+id/mainmetro_one_image"
+			        android:layout_width="@dimen/mainmetro_image_side_length"
+			        android:layout_height="@dimen/mainmetro_image_side_length"
+			        android:layout_centerVertical="true"
+			        android:layout_centerHorizontal="true"
+			        android:src="@drawable/main_nfc" />
+			
+			    <TextView
+			        android:id="@+id/mainmetro_one_text"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+					android:text="NFC"
+			        android:layout_centerHorizontal="true"
+			        android:layout_below="@id/mainmetro_one_image"
+			        android:paddingTop="5dp"
+			        android:textColor="#ffffff" />
+    
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/mainmetro_two"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"
+            android:background="#f48221" >
+			    
+             <ImageView
+			        android:id="@+id/mainmetro_two_image"
+			        android:layout_width="@dimen/mainmetro_image_side_length"
+			        android:layout_height="@dimen/mainmetro_image_side_length"
+			        android:layout_centerVertical="true"
+			        android:layout_centerHorizontal="true"
+			        android:src="@drawable/main_dimensional_code" />
+			
+			    <TextView
+			        android:id="@+id/mainmetro_two_text"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+					android:text="二维码"
+			        android:layout_centerHorizontal="true"
+			        android:layout_below="@id/mainmetro_two_image"
+			        android:paddingTop="5dp"
+			        android:textColor="#ffffff" />
+        </RelativeLayout>
+    </LinearLayout>
+
+   <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginLeft="5dp"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+        
+        <RelativeLayout
+            android:id="@+id/mainmetro_three"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"  
+            android:layout_weight="3"
+            android:background="#a151b5" >
+			    
+            <ImageView
+			        android:id="@+id/mainmetro_three_image"
+			        android:layout_width="@dimen/mainmetro_small_image_side_length"
+			        android:layout_height="@dimen/mainmetro_small_image_side_length"
+			        android:layout_centerVertical="true"
+			        android:layout_centerHorizontal="true"
+			        android:src="@drawable/main_setting" />
+			
+			    <TextView
+			        android:id="@+id/mainmetro_three_text"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+					android:text="设置"
+			        android:layout_centerHorizontal="true"
+			        android:layout_below="@id/mainmetro_three_image"
+			        android:paddingTop="0dp"
+			        android:textColor="#ffffff" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/mainmetro_four"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="2"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="#71aa00" >
+			    
+                <ImageView
+			        android:id="@+id/mainmetro_four_image"
+			        android:layout_width="@dimen/mainmetro_image_side_length"
+			        android:layout_height="@dimen/mainmetro_image_side_length"
+			        android:layout_centerVertical="true"
+			        android:layout_centerHorizontal="true"
+			        android:src="@drawable/main_code" />
+			
+			    <TextView
+			        android:id="@+id/mainmetro_four_text"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+					android:text="条形码"
+			        android:layout_centerHorizontal="true"
+			        android:layout_below="@id/mainmetro_four_image"
+			        android:paddingTop="5dp"
+			        android:textColor="#ffffff" />
+        </RelativeLayout>
+        
+        <RelativeLayout
+            android:id="@+id/mainmetro_five"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" 
+            android:layout_weight="3"
+            android:background="#00bec8" >
+			    
+            <ImageView
+			        android:id="@+id/mainmetro_five_image"
+			        android:layout_width="@dimen/mainmetro_small_image_side_length"
+			        android:layout_height="@dimen/mainmetro_small_image_side_length"
+			        android:layout_centerVertical="true"
+			        android:layout_centerHorizontal="true"
+			        android:src="@drawable/main_express_query" />
+			
+			    <TextView
+			        android:id="@+id/mainmetro_five_text"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+					android:text="查询"
+			        android:layout_centerHorizontal="true"
+			        android:layout_below="@id/mainmetro_five_image"
+			        android:paddingTop="0dp"
+			        android:textColor="#ffffff" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>
