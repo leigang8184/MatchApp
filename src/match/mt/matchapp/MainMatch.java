@@ -3,6 +3,7 @@ package match.mt.matchapp;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
+import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.util.Log;
 import android.view.GestureDetector;
@@ -33,7 +34,7 @@ public class MainMatch extends Activity implements OnGestureListener, OnTouchLis
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.main_match_layout);
 		
-        viewFlipper = (ViewFlipper) findViewById(R.id.main_viewflipper);
+        viewFlipper = (ViewFlipper)findViewById(R.id.main_viewflipper);
         mGestureDetector = new GestureDetector(this);
         viewFlipper.setOnTouchListener(this);
         viewFlipper.setLongClickable(true);
@@ -41,8 +42,9 @@ public class MainMatch extends Activity implements OnGestureListener, OnTouchLis
         displayRatio_selelct(currentPage);
         
         Main_ScrollView myScrollView = (Main_ScrollView) findViewById(R.id.viewflipper_scrollview);
-        myScrollView.setOnTouchListener(onTouchListener);
+        //myScrollView.setOnTouchListener(onTouchListener);
         myScrollView.setGestureDetector(mGestureDetector);
+        
         
         thread.start();
 	}
@@ -67,6 +69,7 @@ public class MainMatch extends Activity implements OnGestureListener, OnTouchLis
 		}
 	};
 	
+	@SuppressLint("HandlerLeak")
 	Handler mHandler = new Handler(){
 
 		@Override
@@ -123,16 +126,16 @@ public class MainMatch extends Activity implements OnGestureListener, OnTouchLis
 	public boolean onFling(MotionEvent e1, MotionEvent e2, float velocityX,
 			float velocityY) {
 		// TODO Auto-generated method stub
-		Log.e("view", "onFling");
+		Log.w("view", "onFling");
 		if (e1.getX() - e2.getX()> FLING_MIN_DISTANCE  
                 && Math.abs(velocityX) > FLING_MIN_VELOCITY ) {
-			Log.e("fling", "left");
+			Log.w("fling", "left");
 			showNextView();
 			showNext = true;
 //			return true;
 		} else if (e2.getX() - e1.getX() > FLING_MIN_DISTANCE  
                 && Math.abs(velocityX) > FLING_MIN_VELOCITY){
-			Log.e("fling", "right");
+			Log.w("fling", "right");
 			showPreviousView();
 			showNext = false;
 //			return true;
@@ -180,7 +183,7 @@ public class MainMatch extends Activity implements OnGestureListener, OnTouchLis
 			displayRatio_selelct(currentPage);
 			displayRatio_normal(currentPage - 1);
 		}
-		Log.e("currentPage", currentPage + "");		
+		Log.w("currentPage", currentPage + "");		
 		
 	}
 	
@@ -198,7 +201,7 @@ public class MainMatch extends Activity implements OnGestureListener, OnTouchLis
 			displayRatio_selelct(currentPage);
 			displayRatio_normal(currentPage + 1);
 		}
-		Log.e("currentPage", currentPage + "");		
+		Log.w("currentPage", currentPage + "");		
 	}
 	
 	private void displayRatio_selelct(int id){

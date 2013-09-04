@@ -5,6 +5,12 @@
 	<color name="bg_color">#272727</color>
 	<color name="list_light">#FFD700</color>
 	<color name="footbar_bg_color">#c3c9be</color>
+		
 	<color name="color_pressed">#ff60a917</color>
+	<color name="color_main_one">#ffee5871</color>
+	<color name="color_main_two">#fff48221</color>
+	<color name="color_main_three">#ffa151b5</color>
+	<color name="color_main_four">#ff00bec8</color>
+	<color name="color_main_five">#ff41dd00</color>
     
 </resources>

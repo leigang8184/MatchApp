@@ -18,7 +18,8 @@
             android:layout_height="fill_parent"
             android:layout_marginBottom="5dp"
             android:layout_weight="1"
-            android:background="#ee5871" >
+            android:background="@drawable/color_main_one_selector"
+            android:clickable="true" >
             
                 <ImageView
 			        android:id="@+id/mainmetro_one_image"
@@ -46,7 +47,8 @@
             android:layout_height="fill_parent"
             android:layout_marginTop="5dp"
             android:layout_weight="1"
-            android:background="#f48221" >
+            android:background="@drawable/color_main_two_selector"
+            android:clickable="true" >
 			    
              <ImageView
 			        android:id="@+id/mainmetro_two_image"
@@ -80,7 +82,8 @@
             android:layout_width="fill_parent"
             android:layout_height="fill_parent"  
             android:layout_weight="3"
-            android:background="#a151b5" >
+            android:background="@drawable/color_main_three_selector"
+            android:clickable="true" >
 			    
             <ImageView
 			        android:id="@+id/mainmetro_three_image"
@@ -108,7 +111,8 @@
             android:layout_weight="2"
             android:layout_marginTop="10dp"
             android:layout_marginBottom="10dp"
-            android:background="#71aa00" >
+            android:background="@drawable/color_main_four_selector"
+            android:clickable="true" >
 			    
                 <ImageView
 			        android:id="@+id/mainmetro_four_image"
@@ -134,7 +138,8 @@
             android:layout_width="fill_parent"
             android:layout_height="fill_parent" 
             android:layout_weight="3"
-            android:background="#00bec8" >
+            android:background="@drawable/color_main_five_selector"
+            android:clickable="true" >
 			    
             <ImageView
 			        android:id="@+id/mainmetro_five_image"

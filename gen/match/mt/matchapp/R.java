@@ -19,6 +19,11 @@ public final class R {
     public static final class color {
         public static final int bg_color=0x7f050002;
         public static final int black=0x7f050000;
+        public static final int color_main_five=0x7f05000a;
+        public static final int color_main_four=0x7f050009;
+        public static final int color_main_one=0x7f050006;
+        public static final int color_main_three=0x7f050008;
+        public static final int color_main_two=0x7f050007;
         public static final int color_pressed=0x7f050005;
         public static final int footbar_bg_color=0x7f050004;
         public static final int list_light=0x7f050003;
@@ -39,23 +44,28 @@ public final class R {
         public static final int color_item_button_selector=0x7f020000;
         public static final int color_item_pressed=0x7f020001;
         public static final int color_item_transparent=0x7f020002;
-        public static final int default_pic_1=0x7f020003;
-        public static final int default_pic_2=0x7f020004;
-        public static final int default_pic_3=0x7f020005;
-        public static final int default_pic_4=0x7f020006;
-        public static final int home_img_ratio=0x7f020007;
-        public static final int home_img_ratio_selected=0x7f020008;
-        public static final int ic_launcher=0x7f020009;
-        public static final int main_bottom_bg=0x7f02000a;
-        public static final int main_code=0x7f02000b;
-        public static final int main_dimensional_code=0x7f02000c;
-        public static final int main_express_query=0x7f02000d;
-        public static final int main_history=0x7f02000e;
-        public static final int main_me=0x7f02000f;
-        public static final int main_nfc=0x7f020010;
-        public static final int main_setting=0x7f020011;
-        public static final int main_settings=0x7f020012;
-        public static final int ratio_img_style=0x7f020013;
+        public static final int color_main_five_selector=0x7f020003;
+        public static final int color_main_four_selector=0x7f020004;
+        public static final int color_main_one_selector=0x7f020005;
+        public static final int color_main_three_selector=0x7f020006;
+        public static final int color_main_two_selector=0x7f020007;
+        public static final int default_pic_1=0x7f020008;
+        public static final int default_pic_2=0x7f020009;
+        public static final int default_pic_3=0x7f02000a;
+        public static final int default_pic_4=0x7f02000b;
+        public static final int home_img_ratio=0x7f02000c;
+        public static final int home_img_ratio_selected=0x7f02000d;
+        public static final int ic_launcher=0x7f02000e;
+        public static final int main_bottom_bg=0x7f02000f;
+        public static final int main_code=0x7f020010;
+        public static final int main_dimensional_code=0x7f020011;
+        public static final int main_express_query=0x7f020012;
+        public static final int main_history=0x7f020013;
+        public static final int main_me=0x7f020014;
+        public static final int main_nfc=0x7f020015;
+        public static final int main_setting=0x7f020016;
+        public static final int main_settings=0x7f020017;
+        public static final int ratio_img_style=0x7f020018;
     }
     public static final class id {
         public static final int LinearLayout1=0x7f0a000c;
