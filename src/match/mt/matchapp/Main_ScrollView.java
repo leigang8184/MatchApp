@@ -9,6 +9,7 @@ import android.widget.ScrollView;
 public class Main_ScrollView extends ScrollView {
 
 	GestureDetector gestureDetector;
+
 	public Main_ScrollView(Context context) {
 		super(context);
 		// TODO Auto-generated constructor stub
@@ -36,10 +37,10 @@ public class Main_ScrollView extends ScrollView {
 	}
 
 	@Override
-	public boolean dispatchTouchEvent(MotionEvent ev){
+	public boolean dispatchTouchEvent(MotionEvent ev) {
 		gestureDetector.onTouchEvent(ev);
 		super.dispatchTouchEvent(ev);
 		return true;
-	} 
-	
+	}
+
 }
