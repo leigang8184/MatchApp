@@ -78,11 +78,11 @@ public final class R {
     public static final class id {
         public static final int LinearLayout1=0x7f08001c;
         public static final int about_version_code=0x7f08000e;
-        public static final int action_settings=0x7f080032;
+        public static final int action_settings=0x7f080035;
         /**  Messages IDs 
          */
         public static final int auto_focus=0x7f080000;
-        public static final int button_back=0x7f080030;
+        public static final int button_back=0x7f080033;
         public static final int decode=0x7f080001;
         public static final int decode_failed=0x7f080002;
         public static final int decode_succeeded=0x7f080003;
@@ -117,16 +117,19 @@ public final class R {
         public static final int mainmetro_two=0x7f080021;
         public static final int mainmetro_two_image=0x7f080022;
         public static final int mainmetro_two_text=0x7f080023;
-        public static final int preview_view=0x7f08002d;
         public static final int quit=0x7f080007;
         public static final int restart_preview=0x7f080008;
         public static final int return_scan_result=0x7f080009;
+        public static final int scan_capture_preview_view=0x7f08002d;
+        public static final int scan_capture_viewfinder_view=0x7f08002e;
+        public static final int scan_result_bitmap=0x7f080032;
+        public static final int scan_result_text=0x7f080031;
+        public static final int scan_result_title=0x7f080030;
         public static final int scan_title=0x7f08002f;
         public static final int search_book_contents_failed=0x7f08000a;
         public static final int search_book_contents_succeeded=0x7f08000b;
         public static final int split=0x7f08000f;
-        public static final int textview_title=0x7f080031;
-        public static final int viewfinder_view=0x7f08002e;
+        public static final int textview_title=0x7f080034;
         public static final int viewflipper_scrollview=0x7f080019;
         public static final int webview=0x7f08000d;
     }
@@ -135,7 +138,8 @@ public final class R {
         public static final int main_match_layout=0x7f030001;
         public static final int main_metro_layout=0x7f030002;
         public static final int scan_capture_layout=0x7f030003;
-        public static final int scan_title_layout=0x7f030004;
+        public static final int scan_result_layout=0x7f030004;
+        public static final int scan_title_layout=0x7f030005;
     }
     public static final class menu {
         public static final int main_match=0x7f0b0000;
@@ -146,9 +150,9 @@ public final class R {
     }
     public static final class string {
         public static final int ScanCaptureActivity=0x7f090001;
-        public static final int action_settings=0x7f090002;
+        public static final int ScanResultActivity=0x7f090002;
+        public static final int action_settings=0x7f090003;
         public static final int app_name=0x7f090000;
-        public static final int hello_world=0x7f090003;
         public static final int scan_text=0x7f090004;
     }
     public static final class style {

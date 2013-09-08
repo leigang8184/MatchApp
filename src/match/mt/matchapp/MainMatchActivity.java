@@ -9,6 +9,7 @@ import android.content.Intent;
 import android.util.Log;
 import android.view.GestureDetector;
 import android.view.GestureDetector.OnGestureListener;
+import android.view.KeyEvent;
 import android.view.Menu;
 import android.view.MotionEvent;
 import android.view.View;
@@ -20,7 +21,7 @@ import android.widget.RelativeLayout;
 import android.widget.Toast;
 import android.widget.ViewFlipper;
 
-public class MainMatch extends Activity implements OnGestureListener,
+public class MainMatchActivity extends Activity implements OnGestureListener,
 		OnTouchListener {
 
 	private ViewFlipper viewFlipper;
@@ -33,6 +34,8 @@ public class MainMatch extends Activity implements OnGestureListener,
 	private GestureDetector mGestureDetector;
 
 	private RelativeLayout NFC_layout;
+	private RelativeLayout BarCode_layout;
+	private RelativeLayout QRCode_layout;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -41,6 +44,8 @@ public class MainMatch extends Activity implements OnGestureListener,
 
 		viewFlipper = (ViewFlipper) findViewById(R.id.main_viewflipper);
 		NFC_layout = (RelativeLayout) findViewById(R.id.mainmetro_one);
+		BarCode_layout = (RelativeLayout) findViewById(R.id.mainmetro_two);
+		QRCode_layout = (RelativeLayout) findViewById(R.id.mainmetro_four);
 
 		mGestureDetector = new GestureDetector(this);
 		viewFlipper.setOnTouchListener(this);
@@ -52,7 +57,8 @@ public class MainMatch extends Activity implements OnGestureListener,
 		// myScrollView.setOnTouchListener(onTouchListener);
 		myScrollView.setGestureDetector(mGestureDetector);
 
-		NFC_layout.setOnClickListener(nfc_Listener);
+		BarCode_layout.setOnClickListener(nfc_Listener);
+		QRCode_layout.setOnClickListener(nfc_Listener);
 
 		thread.start();
 	}
@@ -243,7 +249,21 @@ public class MainMatch extends Activity implements OnGestureListener,
 	}
 
 	private void toastInfo(String string) {
-		Toast.makeText(MainMatch.this, string, Toast.LENGTH_SHORT).show();
+		Toast.makeText(MainMatchActivity.this, string, Toast.LENGTH_SHORT).show();
+	}
+
+	public boolean onKeyDown(int keyCode, KeyEvent event) {
+		if (keyCode == KeyEvent.KEYCODE_BACK) {
+
+			MainMatchActivity.this.finish();
+
+			System.exit(0);
+
+			// int nPid = android.os.Process.myPid();
+			// android.os.Process.killProcess(nPid);
+
+		}
+		return super.onKeyDown(keyCode, event);
 	}
 
 	@Override

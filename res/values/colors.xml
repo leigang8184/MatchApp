@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-	<color name="result_view">#b0000000</color>
+    
+    <color name="result_view">#b0000000</color>
     <color name="viewfinder_mask">#60000000</color>
     <color name="possible_result_points">#c0ffff00</color>
 		
@@ -16,5 +17,7 @@
 	<color name="color_main_three">#ffa151b5</color>
 	<color name="color_main_four">#ff00bec8</color>
 	<color name="color_main_five">#ff41dd00</color>
+	
+
     
 </resources>

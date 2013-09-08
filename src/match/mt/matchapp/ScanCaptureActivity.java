@@ -21,6 +21,7 @@ import android.media.MediaPlayer.OnCompletionListener;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Vibrator;
+import android.util.Log;
 import android.view.SurfaceHolder;
 import android.view.SurfaceHolder.Callback;
 import android.view.SurfaceView;
@@ -49,15 +50,15 @@ public class ScanCaptureActivity extends Activity implements Callback {
 		setContentView(R.layout.scan_capture_layout);
 
 		CameraManager.init(getApplication());
-		viewfinderView = (ViewfinderView) findViewById(R.id.viewfinder_view);
-		
+		viewfinderView = (ViewfinderView) findViewById(R.id.scan_capture_viewfinder_view);
+
 		Button mButtonBack = (Button) findViewById(R.id.button_back);
 		mButtonBack.setOnClickListener(new OnClickListener() {
-			
+
 			@Override
 			public void onClick(View v) {
 				ScanCaptureActivity.this.finish();
-				
+
 			}
 		});
 
@@ -69,7 +70,7 @@ public class ScanCaptureActivity extends Activity implements Callback {
 	protected void onResume() {
 		super.onResume();
 
-		SurfaceView surfaceView = (SurfaceView) findViewById(R.id.preview_view);
+		SurfaceView surfaceView = (SurfaceView) findViewById(R.id.scan_capture_preview_view);
 		SurfaceHolder surfaceHolder = surfaceView.getHolder();
 		if (hasSurface) {
 			initCamera(surfaceHolder);
@@ -97,15 +98,19 @@ public class ScanCaptureActivity extends Activity implements Callback {
 			Toast.makeText(ScanCaptureActivity.this, "Scan failed!",
 					Toast.LENGTH_SHORT).show();
 		} else {
-			// Intent resultIntent = new Intent();
-			// Bundle bundle = new Bundle();
-			// bundle.putString("result", resultString);
-			// bundle.putParcelable("bitmap", barcode);
-			// resultIntent.putExtras(bundle);
-			// this.setResult(RESULT_OK, resultIntent);
 
-			Toast.makeText(ScanCaptureActivity.this, resultString,
-					Toast.LENGTH_SHORT).show();
+			Bundle bundle = new Bundle();
+			bundle.putString("result", resultString);
+			bundle.putParcelable("bitmap", barcode);
+
+			Intent resultIntent = new Intent();
+			resultIntent.setClass(getApplicationContext(),ScanResultActivity.class);
+			resultIntent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+			resultIntent.putExtras(bundle);
+
+			startActivity(resultIntent);
+
+			Log.e("----------------", resultString);
 		}
 		ScanCaptureActivity.this.finish();
 	}
@@ -114,11 +119,19 @@ public class ScanCaptureActivity extends Activity implements Callback {
 	protected void onPause() {
 		// TODO Auto-generated method stub
 		super.onPause();
+
+		if (handler != null) {
+			handler.quitSynchronously();
+			handler = null;
+		}
+		CameraManager.get().closeDriver();
 	}
 
 	@Override
 	protected void onDestroy() {
 		// TODO Auto-generated method stub
+
+		inactivityTimer.shutdown();
 		super.onDestroy();
 	}
 

@@ -3,9 +3,9 @@
 
     <string name="app_name">MatchApp</string>
     <string name="ScanCaptureActivity">ScanCaptureActivity</string>
-    <string name="action_settings">Settings</string>
-    <string name="hello_world">Hello world!</string>
+	<string name="ScanResultActivity">ScanResultActivity</string>
 	
-	<string name="scan_text">将二维码放入框内, 即可自动扫描</string>
+    <string name="action_settings">Settings</string>	
+	<string name="scan_text">将二维码/条形码放入框内, 即可自动扫描</string>
 
 </resources>
