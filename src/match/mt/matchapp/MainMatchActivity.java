@@ -57,13 +57,14 @@ public class MainMatchActivity extends Activity implements OnGestureListener,
 		// myScrollView.setOnTouchListener(onTouchListener);
 		myScrollView.setGestureDetector(mGestureDetector);
 
-		BarCode_layout.setOnClickListener(nfc_Listener);
-		QRCode_layout.setOnClickListener(nfc_Listener);
+		BarCode_layout.setOnClickListener(scan_Listener);
+		QRCode_layout.setOnClickListener(scan_Listener);
+		NFC_layout.setOnClickListener(nfc_Listener);
 
 		thread.start();
 	}
 
-	private OnClickListener nfc_Listener = new OnClickListener() {
+	private OnClickListener scan_Listener = new OnClickListener() {
 
 		@Override
 		public void onClick(View v) {
@@ -71,6 +72,19 @@ public class MainMatchActivity extends Activity implements OnGestureListener,
 
 			Intent intent = new Intent();
 			intent.setClass(getApplicationContext(), ScanCaptureActivity.class);
+			intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+			startActivity(intent);
+		}
+	};
+	
+	private OnClickListener nfc_Listener = new OnClickListener() {
+
+		@Override
+		public void onClick(View v) {
+			// TODO Auto-generated method stub
+
+			Intent intent = new Intent();
+			intent.setClass(getApplicationContext(), NfcActivity.class);
 			intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
 			startActivity(intent);
 		}

@@ -1,0 +1,129 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity" >
+
+    <TextView
+        android:id="@+id/TextView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        android:editable="false"
+        android:gravity="center"
+        android:height="40dp"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:text="@string/wifiTextTitle"
+        android:textColor="#8A2BE2"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:width="300dp" />
+
+    <TextView
+        android:id="@+id/TextView2"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="100dp"
+        android:editable="false"
+        android:gravity="center"
+        android:height="40dp"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:text="@string/WIFITextName"
+        android:textSize="20dp"
+        android:width="300dp" />
+
+    <TextView
+        android:id="@+id/TextView3"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="140dp"
+        android:editable="false"
+        android:gravity="center"
+        android:height="40dp"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:text="@string/WIFITextPwd"
+        android:textSize="20dp"
+        android:width="300dp" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/TextView3"
+        android:layout_below="@+id/TextView3"
+        android:layout_marginTop="26dp"
+        android:text="@string/BottenRead" />
+
+    <TextView
+        android:id="@+id/TextView4"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/TextView3"
+        android:layout_below="@+id/button1"
+        android:layout_marginTop="18dp"
+        android:editable="false"
+        android:gravity="center"
+        android:height="40dp"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:text="@string/WIFIResult"
+        android:textSize="20dp"
+        android:width="300dp" />
+
+    <EditText
+        android:id="@+id/OpRslt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignRight="@+id/TextView4"
+        android:layout_alignTop="@+id/TextView4"
+        android:editable="false"
+        android:ems="10" />
+
+    <EditText
+        android:id="@+id/editText1"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignBaseline="@+id/TextView2"
+        android:layout_alignBottom="@+id/TextView2"
+        android:layout_alignParentRight="true"
+        android:layout_alignRight="@+id/TextView2"
+        android:ems="10" />
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignBaseline="@+id/TextView3"
+        android:layout_alignBottom="@+id/TextView3"
+        android:layout_alignParentRight="true"
+        android:layout_alignRight="@+id/TextView3"
+        android:ems="10" >
+
+        <requestFocus />
+    </EditText>
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/TextView4"
+        android:layout_centerHorizontal="true"
+        android:text="@string/BottenWrite" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/TextView4"
+        android:layout_alignRight="@+id/TextView1"
+        android:layout_marginRight="25dp"
+        android:text="@string/BottenConnect" />
+
+</RelativeLayout>
