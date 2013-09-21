@@ -9,7 +9,7 @@
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
-        layout="@layout/scan_title_layout" />
+        layout="@layout/title_layout" />
 
     <TextView
         android:id="@+id/scan_result_text"

@@ -16,6 +16,8 @@ import android.view.View;
 import android.view.View.OnClickListener;
 import android.view.View.OnTouchListener;
 import android.view.animation.AnimationUtils;
+import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.Toast;
@@ -36,6 +38,9 @@ public class MainMatchActivity extends Activity implements OnGestureListener,
 	private RelativeLayout NFC_layout;
 	private RelativeLayout BarCode_layout;
 	private RelativeLayout QRCode_layout;
+	private RelativeLayout More_layout;
+
+	private ImageButton footbar_settings_btn;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -46,6 +51,9 @@ public class MainMatchActivity extends Activity implements OnGestureListener,
 		NFC_layout = (RelativeLayout) findViewById(R.id.mainmetro_one);
 		BarCode_layout = (RelativeLayout) findViewById(R.id.mainmetro_two);
 		QRCode_layout = (RelativeLayout) findViewById(R.id.mainmetro_four);
+		More_layout = (RelativeLayout) findViewById(R.id.mainmetro_three);
+
+		footbar_settings_btn = (ImageButton) findViewById(R.id.main_footbar_settings);
 
 		mGestureDetector = new GestureDetector(this);
 		viewFlipper.setOnTouchListener(this);
@@ -60,6 +68,9 @@ public class MainMatchActivity extends Activity implements OnGestureListener,
 		BarCode_layout.setOnClickListener(scan_Listener);
 		QRCode_layout.setOnClickListener(scan_Listener);
 		NFC_layout.setOnClickListener(nfc_Listener);
+		More_layout.setOnClickListener(more_Listener);
+
+		footbar_settings_btn.setOnClickListener(morebtn_Listener);
 
 		thread.start();
 	}
@@ -76,7 +87,7 @@ public class MainMatchActivity extends Activity implements OnGestureListener,
 			startActivity(intent);
 		}
 	};
-	
+
 	private OnClickListener nfc_Listener = new OnClickListener() {
 
 		@Override
@@ -87,6 +98,28 @@ public class MainMatchActivity extends Activity implements OnGestureListener,
 			intent.setClass(getApplicationContext(), NfcActivity.class);
 			intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
 			startActivity(intent);
+		}
+	};
+
+	private OnClickListener more_Listener = new OnClickListener() {
+
+		@Override
+		public void onClick(View v) {
+
+			Intent intent = new Intent();
+			intent.setClass(getApplicationContext(), MoreActivity.class);
+			intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+			startActivity(intent);
+		}
+	};
+
+	public Button.OnClickListener morebtn_Listener = new Button.OnClickListener() {
+
+		public void onClick(View v) {
+
+			Intent m_intent = new Intent();
+			m_intent.setClass(getApplicationContext(), MoreActivity.class);
+			startActivity(m_intent);
 		}
 	};
 
@@ -263,7 +296,8 @@ public class MainMatchActivity extends Activity implements OnGestureListener,
 	}
 
 	private void toastInfo(String string) {
-		Toast.makeText(MainMatchActivity.this, string, Toast.LENGTH_SHORT).show();
+		Toast.makeText(MainMatchActivity.this, string, Toast.LENGTH_SHORT)
+				.show();
 	}
 
 	public boolean onKeyDown(int keyCode, KeyEvent event) {

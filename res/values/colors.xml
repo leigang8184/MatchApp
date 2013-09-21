@@ -8,6 +8,7 @@
 	<color name="black">#000000</color>
 	<color name="white">#FFFFFF</color>
 	<color name="bg_color">#272727</color>
+	<color name="color_detail_bg">#fff1efeb</color>
 	<color name="list_light">#FFD700</color>
 	<color name="footbar_bg_color">#c3c9be</color>
 		
@@ -17,6 +18,9 @@
 	<color name="color_main_three">#ffa151b5</color>
 	<color name="color_main_four">#ff00bec8</color>
 	<color name="color_main_five">#ff41dd00</color>
+	
+	<color name="more_item_pressed">#ff218dff</color>
+    <color name="more_item_line">#ffbbbbbb</color>
 	
 
     

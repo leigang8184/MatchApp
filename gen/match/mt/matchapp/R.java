@@ -19,14 +19,17 @@ public final class R {
     public static final class color {
         public static final int bg_color=0x7f070005;
         public static final int black=0x7f070003;
-        public static final int color_main_five=0x7f07000d;
-        public static final int color_main_four=0x7f07000c;
-        public static final int color_main_one=0x7f070009;
-        public static final int color_main_three=0x7f07000b;
-        public static final int color_main_two=0x7f07000a;
-        public static final int color_pressed=0x7f070008;
-        public static final int footbar_bg_color=0x7f070007;
-        public static final int list_light=0x7f070006;
+        public static final int color_detail_bg=0x7f070006;
+        public static final int color_main_five=0x7f07000e;
+        public static final int color_main_four=0x7f07000d;
+        public static final int color_main_one=0x7f07000a;
+        public static final int color_main_three=0x7f07000c;
+        public static final int color_main_two=0x7f07000b;
+        public static final int color_pressed=0x7f070009;
+        public static final int footbar_bg_color=0x7f070008;
+        public static final int list_light=0x7f070007;
+        public static final int more_item_line=0x7f070010;
+        public static final int more_item_pressed=0x7f07000f;
         public static final int possible_result_points=0x7f070002;
         public static final int result_view=0x7f070000;
         public static final int viewfinder_mask=0x7f070001;
@@ -44,58 +47,72 @@ public final class R {
         public static final int mainmetro_small_image_side_length=0x7f080003;
     }
     public static final class drawable {
-        public static final int color_item_button_selector=0x7f020000;
-        public static final int color_item_pressed=0x7f020001;
-        public static final int color_item_transparent=0x7f020002;
-        public static final int color_main_five_selector=0x7f020003;
-        public static final int color_main_four_selector=0x7f020004;
-        public static final int color_main_one_selector=0x7f020005;
-        public static final int color_main_three_selector=0x7f020006;
-        public static final int color_main_two_selector=0x7f020007;
-        public static final int default_pic_1=0x7f020008;
-        public static final int default_pic_2=0x7f020009;
-        public static final int default_pic_3=0x7f02000a;
-        public static final int default_pic_4=0x7f02000b;
-        public static final int home_img_ratio=0x7f02000c;
-        public static final int home_img_ratio_selected=0x7f02000d;
-        public static final int ic_launcher=0x7f02000e;
-        public static final int main_bottom_bg=0x7f02000f;
-        public static final int main_code=0x7f020010;
-        public static final int main_dimensional_code=0x7f020011;
-        public static final int main_express_query=0x7f020012;
-        public static final int main_history=0x7f020013;
-        public static final int main_me=0x7f020014;
-        public static final int main_nfc=0x7f020015;
-        public static final int main_setting=0x7f020016;
-        public static final int main_settings=0x7f020017;
-        public static final int mm_title_back_focused=0x7f020018;
-        public static final int mm_title_back_normal=0x7f020019;
-        public static final int mm_title_back_pressed=0x7f02001a;
-        public static final int mmtitle_bg_alpha=0x7f02001b;
-        public static final int ratio_img_style=0x7f02001c;
-        public static final int scan_title_back_btn=0x7f02001d;
+        public static final int arrow=0x7f020000;
+        public static final int color_item_button_selector=0x7f020001;
+        public static final int color_item_pressed=0x7f020002;
+        public static final int color_item_transparent=0x7f020003;
+        public static final int color_main_five_selector=0x7f020004;
+        public static final int color_main_four_selector=0x7f020005;
+        public static final int color_main_one_selector=0x7f020006;
+        public static final int color_main_three_selector=0x7f020007;
+        public static final int color_main_two_selector=0x7f020008;
+        public static final int default_pic_1=0x7f020009;
+        public static final int default_pic_2=0x7f02000a;
+        public static final int default_pic_3=0x7f02000b;
+        public static final int default_pic_4=0x7f02000c;
+        public static final int home_img_ratio=0x7f02000d;
+        public static final int home_img_ratio_selected=0x7f02000e;
+        public static final int ic_launcher=0x7f02000f;
+        public static final int main_bottom_bg=0x7f020010;
+        public static final int main_code=0x7f020011;
+        public static final int main_dimensional_code=0x7f020012;
+        public static final int main_express_query=0x7f020013;
+        public static final int main_history=0x7f020014;
+        public static final int main_me=0x7f020015;
+        public static final int main_nfc=0x7f020016;
+        public static final int main_setting=0x7f020017;
+        public static final int main_settings=0x7f020018;
+        public static final int mm_title_back_focused=0x7f020019;
+        public static final int mm_title_back_normal=0x7f02001a;
+        public static final int mm_title_back_pressed=0x7f02001b;
+        public static final int mmtitle_bg_alpha=0x7f02001c;
+        public static final int more_center=0x7f02001d;
+        public static final int more_center_normal=0x7f02001e;
+        public static final int more_center_pressed=0x7f02001f;
+        public static final int more_down=0x7f020020;
+        public static final int more_down_normal=0x7f020021;
+        public static final int more_down_pressed=0x7f020022;
+        public static final int more_single=0x7f020023;
+        public static final int more_single_normal=0x7f020024;
+        public static final int more_single_pressed=0x7f020025;
+        public static final int more_up=0x7f020026;
+        public static final int more_up_normal=0x7f020027;
+        public static final int more_up_pressed=0x7f020028;
+        public static final int ratio_img_style=0x7f020029;
+        public static final int scan_title_back_btn=0x7f02002a;
+        public static final int shape_rounded_rectangle=0x7f02002b;
     }
     public static final class id {
         public static final int LinearLayout1=0x7f09001c;
-        public static final int OpRslt=0x7f090032;
-        public static final int TextView1=0x7f09002d;
-        public static final int TextView2=0x7f09002e;
-        public static final int TextView3=0x7f09002f;
-        public static final int TextView4=0x7f090031;
+        public static final int OpRslt=0x7f09003b;
+        public static final int TextView1=0x7f090036;
+        public static final int TextView2=0x7f090037;
+        public static final int TextView3=0x7f090038;
+        public static final int TextView4=0x7f09003a;
         public static final int about_version_code=0x7f09000e;
-        public static final int action_settings=0x7f09003f;
+        public static final int action_settings=0x7f090048;
         /**  Messages IDs 
          */
         public static final int auto_focus=0x7f090000;
-        public static final int button1=0x7f090030;
-        public static final int button2=0x7f090035;
-        public static final int button3=0x7f090036;
-        public static final int button_back=0x7f09003d;
+        public static final int button1=0x7f090039;
+        public static final int button2=0x7f09003e;
+        public static final int button3=0x7f09003f;
+        public static final int button_back=0x7f090046;
         public static final int decode=0x7f090001;
         public static final int decode_failed=0x7f090002;
         public static final int decode_succeeded=0x7f090003;
-        public static final int editText1=0x7f090033;
-        public static final int editText2=0x7f090034;
+        public static final int editText1=0x7f09003c;
+        public static final int editText2=0x7f09003d;
         public static final int encode_failed=0x7f090004;
         public static final int encode_succeeded=0x7f090005;
         public static final int gridview=0x7f09000c;
@@ -127,19 +144,28 @@ public final class R {
         public static final int mainmetro_two=0x7f090021;
         public static final int mainmetro_two_image=0x7f090022;
         public static final int mainmetro_two_text=0x7f090023;
+        public static final int more_btn_about=0x7f090035;
+        public static final int more_btn_clear=0x7f090032;
+        public static final int more_btn_rate=0x7f090033;
+        public static final int more_btn_share=0x7f090034;
+        public static final int more_btn_suggestion=0x7f09002f;
+        public static final int more_btn_valid_history=0x7f090030;
+        public static final int more_btn_version=0x7f090031;
+        public static final int more_button_back=0x7f09002d;
+        public static final int more_textview_title=0x7f09002e;
         public static final int quit=0x7f090007;
         public static final int restart_preview=0x7f090008;
         public static final int return_scan_result=0x7f090009;
-        public static final int scan_capture_preview_view=0x7f090037;
-        public static final int scan_capture_viewfinder_view=0x7f090038;
-        public static final int scan_result_bitmap=0x7f09003c;
-        public static final int scan_result_text=0x7f09003b;
-        public static final int scan_result_title=0x7f09003a;
-        public static final int scan_title=0x7f090039;
+        public static final int scan_capture_preview_view=0x7f090040;
+        public static final int scan_capture_viewfinder_view=0x7f090041;
+        public static final int scan_result_bitmap=0x7f090045;
+        public static final int scan_result_text=0x7f090044;
+        public static final int scan_result_title=0x7f090043;
+        public static final int scan_title=0x7f090042;
         public static final int search_book_contents_failed=0x7f09000a;
         public static final int search_book_contents_succeeded=0x7f09000b;
         public static final int split=0x7f09000f;
-        public static final int textview_title=0x7f09003e;
+        public static final int textview_title=0x7f090047;
         public static final int viewflipper_scrollview=0x7f090019;
         public static final int webview=0x7f09000d;
     }
@@ -147,10 +173,11 @@ public final class R {
         public static final int main_flipper_radio_layout=0x7f030000;
         public static final int main_match_layout=0x7f030001;
         public static final int main_metro_layout=0x7f030002;
-        public static final int nfc_layout=0x7f030003;
-        public static final int scan_capture_layout=0x7f030004;
-        public static final int scan_result_layout=0x7f030005;
-        public static final int scan_title_layout=0x7f030006;
+        public static final int more_layout=0x7f030003;
+        public static final int nfc_layout=0x7f030004;
+        public static final int scan_capture_layout=0x7f030005;
+        public static final int scan_result_layout=0x7f030006;
+        public static final int title_layout=0x7f030007;
     }
     public static final class menu {
         public static final int main_match=0x7f0c0000;
@@ -160,21 +187,22 @@ public final class R {
         public static final int realm_properties=0x7f060001;
     }
     public static final class string {
-        public static final int BottenConnect=0x7f0a0009;
-        public static final int BottenRead=0x7f0a000b;
-        public static final int BottenWrite=0x7f0a000a;
+        public static final int BottenConnect=0x7f0a000a;
+        public static final int BottenRead=0x7f0a000c;
+        public static final int BottenWrite=0x7f0a000b;
+        public static final int MoreActivity=0x7f0a0004;
         public static final int NfcActivity=0x7f0a0003;
         public static final int ScanCaptureActivity=0x7f0a0001;
         public static final int ScanResultActivity=0x7f0a0002;
-        public static final int WIFIResult=0x7f0a000c;
-        public static final int WIFITextName=0x7f0a0007;
-        public static final int WIFITextPwd=0x7f0a0008;
-        public static final int action_settings=0x7f0a0004;
+        public static final int WIFIResult=0x7f0a000d;
+        public static final int WIFITextName=0x7f0a0008;
+        public static final int WIFITextPwd=0x7f0a0009;
+        public static final int action_settings=0x7f0a0005;
         public static final int app_name=0x7f0a0000;
-        public static final int info=0x7f0a000d;
-        public static final int nfcInfo=0x7f0a000e;
-        public static final int scan_text=0x7f0a0005;
-        public static final int wifiTextTitle=0x7f0a0006;
+        public static final int info=0x7f0a000e;
+        public static final int nfcInfo=0x7f0a000f;
+        public static final int scan_text=0x7f0a0006;
+        public static final int wifiTextTitle=0x7f0a0007;
     }
     public static final class style {
         /** 
@@ -191,6 +219,7 @@ public final class R {
          */
         public static final int AppBaseTheme=0x7f0b0000;
         public static final int AppTheme=0x7f0b0001;
+        public static final int more_button_style=0x7f0b0002;
     }
     public static final class xml {
         public static final int filter_nfc=0x7f050000;

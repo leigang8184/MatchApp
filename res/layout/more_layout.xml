@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/color_detail_bg"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/mmtitle_bg_alpha" >
+
+        <Button
+            android:id="@+id/more_button_back"
+            android:layout_width="75.0dip"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="2dip"
+            android:background="@drawable/scan_title_back_btn"
+            android:text="返回"
+            android:textColor="@android:color/white" />
+
+        <TextView
+            android:id="@+id/more_textview_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+			android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:gravity="center_vertical"
+            android:text="设置"
+            android:textColor="@android:color/white"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:fadingEdge="none" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10.0dip" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10.0dip"
+                android:layout_marginTop="2.0dip"
+                android:background="@drawable/shape_rounded_rectangle"
+                android:orientation="vertical"
+                android:padding="1.0dip" >
+
+                <Button
+                    android:id="@+id/more_btn_suggestion"
+                    style="@style/more_button_style"
+                    android:background="@drawable/more_up"
+                    android:text="我要说" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="1.0dip"
+                    android:background="@color/more_item_line" />
+
+                <Button
+                    android:id="@+id/more_btn_valid_history"
+                    style="@style/more_button_style"
+                    android:background="@drawable/more_down"
+                    android:text="验证记录" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2.0dip"
+                android:background="@drawable/shape_rounded_rectangle"
+                android:orientation="vertical"
+                android:padding="1.0dip" >
+
+                <Button
+                    android:id="@+id/more_btn_version"
+                    style="@style/more_button_style"
+                    android:background="@drawable/more_up"
+                    android:text="版本检查" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="1.0dip"
+                    android:background="@color/more_item_line" />
+
+                <Button
+                    android:id="@+id/more_btn_clear"
+                    style="@style/more_button_style"
+                    android:background="@drawable/more_center"
+                    android:text="清除缓存" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="1.0dip"
+                    android:background="@color/more_item_line" />
+
+                <Button
+                    android:id="@+id/more_btn_rate"
+                    style="@style/more_button_style"
+                    android:background="@drawable/more_center"
+                    android:text="评价查真"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="1.0dip"
+                    android:background="@color/more_item_line"
+                    android:visibility="gone" />
+
+                <Button
+                    android:id="@+id/more_btn_share"
+                    style="@style/more_button_style"
+                    android:background="@drawable/more_center"
+                    android:text="分享查真" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="1.0dip"
+                    android:background="@color/more_item_line" />
+
+                <Button
+                    android:id="@+id/more_btn_about"
+                    style="@style/more_button_style"
+                    android:background="@drawable/more_down"
+                    android:text="关于查真" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
