@@ -88,9 +88,10 @@ public final class R {
         public static final int more_up=0x7f020026;
         public static final int more_up_normal=0x7f020027;
         public static final int more_up_pressed=0x7f020028;
-        public static final int ratio_img_style=0x7f020029;
-        public static final int scan_title_back_btn=0x7f02002a;
-        public static final int shape_rounded_rectangle=0x7f02002b;
+        public static final int qrcode_scan_line=0x7f020029;
+        public static final int ratio_img_style=0x7f02002a;
+        public static final int scan_title_back_btn=0x7f02002b;
+        public static final int shape_rounded_rectangle=0x7f02002c;
     }
     public static final class id {
         public static final int LinearLayout1=0x7f09001c;

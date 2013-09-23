@@ -6,6 +6,7 @@ import java.util.HashSet;
 import android.content.Context;
 import android.content.res.Resources;
 import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
 import android.graphics.Canvas;
 import android.graphics.Color;
 import android.graphics.Paint;
@@ -172,9 +173,20 @@ public final class ViewfinderView extends View {
 			if (slideTop >= frame.bottom) {
 				slideTop = frame.top;
 			}
-			canvas.drawRect(frame.left + MIDDLE_LINE_PADDING, slideTop
-					- MIDDLE_LINE_WIDTH / 2, frame.right - MIDDLE_LINE_PADDING,
-					slideTop + MIDDLE_LINE_WIDTH / 2, paint);
+//			canvas.drawRect(frame.left + MIDDLE_LINE_PADDING, slideTop
+//					- MIDDLE_LINE_WIDTH / 2, frame.right - MIDDLE_LINE_PADDING,
+//					slideTop + MIDDLE_LINE_WIDTH / 2, paint);
+			
+			Rect lineRect = new Rect();  
+            lineRect.left = frame.left;  
+            lineRect.right = frame.right;  
+            lineRect.top = slideTop;  
+            lineRect.bottom = slideTop + 18;  
+            Resources res = getResources();
+            Bitmap bmp = BitmapFactory.decodeResource(res, R.drawable.qrcode_scan_line);
+            canvas.drawBitmap(bmp, null, lineRect, paint);  
+//            canvas.drawBitmap(((BitmapDrawable)(getResources().getDrawable(R.drawable.qrcode_scan_line))).getBitmap(), null, lineRect, paint);   
+            
 
 			// »­É¨Ãè¿òÏÂÃæµÄ×Ö
 			paint.setColor(Color.WHITE);
