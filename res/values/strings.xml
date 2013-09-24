@@ -6,6 +6,7 @@
 	<string name="ScanResultActivity">ScanResultActivity</string>
 	<string name="NfcActivity">NfcActivity</string>
 	<string name="MoreActivity">MoreActivity</string>
+	<string name="MoreAboutActivity">MoreAboutActivity</string>
 	
     <string name="action_settings">Settings</string>	
 	<string name="scan_text">将二维码/条形码放入框内, 即可自动扫描</string>
@@ -19,5 +20,7 @@
     <string name="WIFIResult">操作结果:</string>
     <string name="info">info</string>
     <string name="nfcInfo">nfc数据</string>
+	
+	<string name="about_bottom_text">©2013 迈驰科技</string>
 
 </resources>

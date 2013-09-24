@@ -61,6 +61,12 @@
             android:theme="@android:style/Theme.NoTitleBar" >
         </activity>
         <activity
+            android:name=".MoreAboutActivity"
+            android:label="@string/MoreAboutActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        <activity
             android:name=".NfcActivity"
             android:label="@string/NfcActivity"
             android:screenOrientation="portrait"
