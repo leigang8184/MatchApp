@@ -21,7 +21,8 @@
 	
 	<color name="more_item_pressed">#ff218dff</color>
     <color name="more_item_line">#ffbbbbbb</color>
-	
+		
+	<color name="nfc_start_color">#ff613cbc</color>
 
     
 </resources>

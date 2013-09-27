@@ -30,6 +30,7 @@ public final class R {
         public static final int list_light=0x7f070007;
         public static final int more_item_line=0x7f070010;
         public static final int more_item_pressed=0x7f07000f;
+        public static final int nfc_start_color=0x7f070011;
         public static final int possible_result_points=0x7f070002;
         public static final int result_view=0x7f070000;
         public static final int viewfinder_mask=0x7f070001;
@@ -88,10 +89,13 @@ public final class R {
         public static final int more_up=0x7f020026;
         public static final int more_up_normal=0x7f020027;
         public static final int more_up_pressed=0x7f020028;
-        public static final int qrcode_scan_line=0x7f020029;
-        public static final int ratio_img_style=0x7f02002a;
-        public static final int scan_title_back_btn=0x7f02002b;
-        public static final int shape_rounded_rectangle=0x7f02002c;
+        public static final int nfc_bg=0x7f020029;
+        public static final int nfc_bg_center=0x7f02002a;
+        public static final int nfc_bg_top=0x7f02002b;
+        public static final int qrcode_scan_line=0x7f02002c;
+        public static final int ratio_img_style=0x7f02002d;
+        public static final int scan_title_back_btn=0x7f02002e;
+        public static final int shape_rounded_rectangle=0x7f02002f;
     }
     public static final class id {
         public static final int LinearLayout1=0x7f09001c;
@@ -105,14 +109,14 @@ public final class R {
         public static final int about_title_layout=0x7f09002d;
         public static final int about_version_code=0x7f09000e;
         public static final int about_webView=0x7f090030;
-        public static final int action_settings=0x7f09004c;
+        public static final int action_settings=0x7f090050;
         /**  Messages IDs 
          */
         public static final int auto_focus=0x7f090000;
         public static final int button1=0x7f09003d;
         public static final int button2=0x7f090042;
         public static final int button3=0x7f090043;
-        public static final int button_back=0x7f09004a;
+        public static final int button_back=0x7f09004e;
         public static final int decode=0x7f090001;
         public static final int decode_failed=0x7f090002;
         public static final int decode_succeeded=0x7f090003;
@@ -158,19 +162,23 @@ public final class R {
         public static final int more_btn_version=0x7f090035;
         public static final int more_button_back=0x7f090031;
         public static final int more_textview_title=0x7f090032;
+        public static final int nfc_start_button_back=0x7f090045;
+        public static final int nfc_start_text_describe=0x7f090047;
+        public static final int nfc_start_textview_title=0x7f090046;
+        public static final int nfc_start_view=0x7f090044;
         public static final int quit=0x7f090007;
         public static final int restart_preview=0x7f090008;
         public static final int return_scan_result=0x7f090009;
-        public static final int scan_capture_preview_view=0x7f090044;
-        public static final int scan_capture_viewfinder_view=0x7f090045;
-        public static final int scan_result_bitmap=0x7f090049;
-        public static final int scan_result_text=0x7f090048;
-        public static final int scan_result_title=0x7f090047;
-        public static final int scan_title=0x7f090046;
+        public static final int scan_capture_preview_view=0x7f090048;
+        public static final int scan_capture_viewfinder_view=0x7f090049;
+        public static final int scan_result_bitmap=0x7f09004d;
+        public static final int scan_result_text=0x7f09004c;
+        public static final int scan_result_title=0x7f09004b;
+        public static final int scan_title=0x7f09004a;
         public static final int search_book_contents_failed=0x7f09000a;
         public static final int search_book_contents_succeeded=0x7f09000b;
         public static final int split=0x7f09000f;
-        public static final int textview_title=0x7f09004b;
+        public static final int textview_title=0x7f09004f;
         public static final int viewflipper_scrollview=0x7f090019;
         public static final int webview=0x7f09000d;
     }
@@ -181,9 +189,10 @@ public final class R {
         public static final int more_about_layout=0x7f030003;
         public static final int more_layout=0x7f030004;
         public static final int nfc_layout=0x7f030005;
-        public static final int scan_capture_layout=0x7f030006;
-        public static final int scan_result_layout=0x7f030007;
-        public static final int title_layout=0x7f030008;
+        public static final int nfc_start_layout=0x7f030006;
+        public static final int scan_capture_layout=0x7f030007;
+        public static final int scan_result_layout=0x7f030008;
+        public static final int title_layout=0x7f030009;
     }
     public static final class menu {
         public static final int main_match=0x7f0c0000;
@@ -209,6 +218,7 @@ public final class R {
         public static final int app_name=0x7f0a0000;
         public static final int info=0x7f0a000f;
         public static final int nfcInfo=0x7f0a0010;
+        public static final int nfc_start_text_describe=0x7f0a0012;
         public static final int scan_text=0x7f0a0007;
         public static final int wifiTextTitle=0x7f0a0008;
     }

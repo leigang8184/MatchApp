@@ -22,5 +22,7 @@
     <string name="nfcInfo">nfc数据</string>
 	
 	<string name="about_bottom_text">©2013 迈驰科技</string>
+	
+	<string name="nfc_start_text_describe">请将您的手机靠近商品包装防伪感应区，读取标签信息</string>
 
 </resources>

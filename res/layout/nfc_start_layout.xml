@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout  
+	android:layout_width="fill_parent" 
+	android:layout_height="fill_parent"
+	xmlns:android="http://schemas.android.com/apk/res/android">
+	<RelativeLayout 
+		android:id="@+id/nfc_start_view" 
+		android:background="@drawable/nfc_bg" 
+		android:layout_width="fill_parent" 
+		android:layout_height="fill_parent">
+		<ImageView 
+			android:layout_width="wrap_content" 
+			android:layout_height="wrap_content" 
+			android:layout_marginTop="40.0dip" 
+			android:src="@drawable/nfc_bg_top" 
+			android:layout_alignParentTop="true" 
+			android:layout_alignParentRight="true" />
+		
+		<ImageView 
+			android:layout_width="wrap_content" 
+			android:layout_height="wrap_content" 
+			android:layout_marginTop="40.0dip" 
+			android:src="@drawable/nfc_bg_center" 
+			android:layout_centerInParent="true" />
+	</RelativeLayout>
+		
+	<RelativeLayout 
+		android:padding="0.0dip" 
+		android:layout_width="fill_parent" 
+		android:layout_height="fill_parent">
+		<RelativeLayout
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:background="@drawable/mmtitle_bg_alpha" >
+
+			<Button
+				android:id="@+id/nfc_start_button_back"
+				android:layout_width="75.0dip"
+				android:layout_height="wrap_content"
+				android:layout_centerVertical="true"
+				android:layout_marginLeft="2dip"
+				android:background="@drawable/scan_title_back_btn"
+				android:text="返回"
+				android:textColor="@android:color/white" />
+
+			<TextView
+				android:id="@+id/nfc_start_textview_title"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_centerVertical="true"
+				android:layout_centerHorizontal="true"
+				android:gravity="center_vertical"
+				android:text="NFC验证"
+				android:textColor="@android:color/white"
+				android:textSize="16sp" />
+    </RelativeLayout>
+		<TextView 
+			android:id="@+id/nfc_start_text_describe"
+			android:textSize="20.0sp" 
+			android:textStyle="bold" 
+			android:textColor="@color/nfc_start_color"  
+			android:paddingBottom="20.0dip" 
+			android:layout_width="wrap_content" 
+			android:layout_height="wrap_content" 
+			android:layout_margin="30.0dip" 
+			android:text="@string/nfc_start_text_describe" 
+			android:layout_alignParentBottom="true" 
+			android:layout_centerHorizontal="true" />
+	</RelativeLayout>
+</FrameLayout>
